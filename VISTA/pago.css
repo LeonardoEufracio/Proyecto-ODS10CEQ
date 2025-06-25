@@ -1,0 +1,144 @@
+body {
+  background-color: #f5f4fa;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.pago-container {
+  max-width: 700px;
+  margin: 30px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.encabezado-pago {
+  background-color: #4b2aad;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.logo {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.mensaje-importante {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.tabla-datos {
+  width: 100%;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+.tabla-datos th {
+  text-align: left;
+  color: #333;
+  padding: 6px;
+  width: 40%;
+}
+
+.tabla-datos td {
+  padding: 6px;
+  color: #444;
+}
+
+.terminos {
+  display: block;
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+.advertencia {
+  font-size: 0.85rem;
+  color: #c00;
+}
+
+.btn-pagar, .continuar, .consultar-pago {
+  background-color: #4b2aad;
+  color: white;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.btn-pagar:hover, .continuar:hover, .consultar-pago:hover {
+  background-color: #351c80;
+}
+
+/* Modal general */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1002;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+}
+
+/* Modal método de pago */
+.modal-contenido {
+  background-color: #fff;
+  margin: 60px auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 360px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-contenido .cerrar {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-contenido .logos img {
+  margin-top: 5px;
+  max-width: 100%;
+}
+
+/* Modal QR */
+.modal-qr {
+  background-color: white;
+  margin: 60px auto;
+  padding: 30px 20px;
+  border-radius: 12px;
+  width: 340px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-qr .cerrar {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-qr .qr-imagen {
+  width: 180px;
+  margin: 15px 0;
+}
+
+.modal-qr .descripcion-qr {
+  font-size: 0.9rem;
+  color: #555;
+}
